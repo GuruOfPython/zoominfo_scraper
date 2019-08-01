@@ -92,11 +92,4 @@ class Zoominfo_Scraper():
                     pxy = PROXIES[TOTAL_REQUESTS_CNT]
                     main_job = self.pool.apply_async(get_details, (url, pxy, retry_num,))
                     main_jobs.append(main_job)
-
-
-                
-
-
-if __name__ == '__main__':
-    app = Zoominfo_Scraper()
-    app.start_requests()
+                    
